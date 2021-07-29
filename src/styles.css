@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://us.123rf.com/450wm/rawpixel/rawpixel1903/rawpixel190300564/118447371-orange-acrylic-paint-textured-background.jpg?ver=6");
+  background-blend-mode: lighten;
+}
+.main-heading {
+  color: rgb(255, 255, 255);
+  background-color: #d06e6e;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  text-shadow: 1px 1px 8px rgb(26, 26, 3);
+  height: 5rem;
+  border: 2px 2px brown;
+  padding: 20px 0px 10px 0px;
+}
+.div-input {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.input-field {
+  padding: 1%;
+  margin: 1%;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 60%;
+  background: transparent;
+}
+.input-field:hover {
+  background-color: rgb(255, 193, 193);
+}
+.search {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1.5%;
+}
+.container {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  margin: 2%;
+  transition: transform 0.2s;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+.secondHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 5px #fff;
+  font-size: 1.25rem;
+}
+.secondHeading:hover {
+  cursor: default;
+}
+.all-image {
+  height: 10rem;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}

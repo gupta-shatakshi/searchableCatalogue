@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Data from "./Data";
+import Display from "./Display";
+import "./styles.css";
 
-function App() {
+export default function App(props) {
+  const [search, setSearch] = useState("");
+  document.title = "Wall Paint Catalogue"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="main-heading">Searchable Catalogue</h1>
+      <div className="div-input">
+        <input
+          className="input-field"
+          type="text"
+          placeholder="Search by categories of colors..."
+          onChange={(event) =>
+            setSearch(event.target.value.toLocaleLowerCase())
+          }
+        />
+        <img
+          src="http://assets.stickpng.com/images/585e4ad1cb11b227491c3391.png"
+          alt="Search"
+          className="search"
+        />
+      </div>
+      {Data.filter((val) => {
+        if (val.commonName.toLocaleLowerCase().includes(search)) {
+          return val;
+        }
+      }).map((val) => {
+        return (
+          <>
+            <div className="container" key={val.id}>
+              <Display
+                id={val.id}
+                name={val.name}
+                codename={val.codeName}
+                commonname={val.commonName}
+                image={val.image}
+              />
+            </div>
+          </>
+        );
+      })}
     </div>
   );
 }
-
-export default App;
