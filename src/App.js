@@ -19,7 +19,8 @@ export default function App(props) {
           }
         />
         <img
-          src="http://assets.stickpng.com/images/585e4ad1cb11b227491c3391.png"
+//           src="http://assets.stickpng.com/images/585e4ad1cb11b227491c3391.png"
+          src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"
           alt="Search"
           className="search"
         />
