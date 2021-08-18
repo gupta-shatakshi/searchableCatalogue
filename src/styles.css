@@ -7,8 +7,13 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("https://us.123rf.com/450wm/rawpixel/rawpixel1903/rawpixel190300564/118447371-orange-acrylic-paint-textured-background.jpg?ver=6");
-  background-blend-mode: lighten;
+/*   background-image: url("https://us.123/rf.com/450wm/rawpixel/rawpixel1903/rawpixel190300564/118447371-orange-acrylic-paint-textured-background.jpg?ver=6"); */
+/*   background-blend-mode: lighten; */
+  background: url("https://us.123/rf.com/450wm/rawpixel/rawpixel1903/rawpixel190300564/118447371-orange-acrylic-paint-textured-background.jpg?ver=6") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .main-heading {
   color: rgb(255, 255, 255);
